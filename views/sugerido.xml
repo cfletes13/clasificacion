@@ -10,4 +10,20 @@
                </field>
            </field>
        </record>
+
+       <record id="view_sugerido_form_qoutation_sugerido_inherit" model="ir.ui.view">
+               <field name="name">Qoutation Sugerido Custom</field>
+               <field name="model">sale.order</field>
+               <field name="inherit_id" ref="sale.view_order_form"/>
+               <field name="arch" type="xml">
+                   <field name="qou_subclase" position="after">
+                       <field name="qou_sugerido"/>
+                   </field>
+               </field>
+           </record>
+
+
+
+
+
    </odoo>
